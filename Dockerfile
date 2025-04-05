@@ -21,7 +21,5 @@ RUN unzip /tmp/pb.zip -d /pb/
 
 EXPOSE 8080
 
-RUN  /pb/pocketbase superuser upsert gabrielcorreacardenas@gmail.com 12345678
-
 # start PocketBase
 CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080"]
